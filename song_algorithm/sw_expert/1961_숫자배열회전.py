@@ -1,4 +1,4 @@
-def rotation(arr, N):
+def rotation(arr, N):       #배열 90도씩 회전시키는 함수
     rotation_arr = []
     for i in range(0, N):
         bef_ro_arr = []
