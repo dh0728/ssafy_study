@@ -23,3 +23,4 @@ for t in range(1, T + 1):
     
     result = max_mul(N, M, Ai, Bj)
     print('#%d %d' % (t, result))
+    #print(f'#{t} {result}')
