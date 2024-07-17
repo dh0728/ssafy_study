@@ -1,0 +1,7 @@
+#import sys
+# T= int(sys.stdin.readline())
+
+T = int(input())
+
+for i in range(1, T+1):
+  print(' '*(T-i)+'*'*i)
