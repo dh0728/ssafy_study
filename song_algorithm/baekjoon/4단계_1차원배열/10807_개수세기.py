@@ -8,3 +8,16 @@ for i in li:
     count += 1
 
 print(count)
+
+#버전2
+N = int(input())
+nums = list(map(int,input().split()))
+v = int(input())
+print(nums.count(v))
+
+#버전3
+
+a = int(input())
+list = input().split()
+print(list)
+print(list.count(input()))
