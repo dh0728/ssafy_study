@@ -3,7 +3,7 @@ for t in range(int(input())): #test case 수 입력 받은 만큼 반복
     N = int(input()) #각 테스트 케이스마다 행렬 크기(줄) N 입력받기
     input_li = [input().split() for i in range(N)] #list comprehension 사용 N번 반복 후 input_li 리스트에 저장
     result = [""] * N #회전 후 결과 저장 리스트 빈 문자열로 초기화
-     
+    
     # CASE 1
     res_li_1 = [[]] * N #N개의 빈 리스트 초기화
     for li in input_li : #각 행을 순회해서 반복
@@ -29,4 +29,4 @@ for t in range(int(input())): #test case 수 입력 받은 만큼 반복
  
     print(f"#{t+1}") # '#1' 부터 시작
     for s in result :
-            print(s) # 한 줄씩 출력하기
+            print(s) # 한 줄씩 출력
