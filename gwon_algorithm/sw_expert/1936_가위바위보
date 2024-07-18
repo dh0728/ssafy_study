@@ -1,0 +1,13 @@
+A=list(map(int, input().split()))
+a=A[0]
+b=A[1]
+if abs(a-b)==1:
+    if a<b:
+        print("B")
+    else:
+        print("A")
+elif abs(a-b)==2:
+    if a<b:
+        print("A")
+    else:
+        print("B")
