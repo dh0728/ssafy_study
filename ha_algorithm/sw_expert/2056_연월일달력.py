@@ -1,6 +1,6 @@
 T = int(input())
 days = [1, -2, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1]
- 
+
 for i in range(T):
     a = input()
     year = int(a[:4])
