@@ -10,7 +10,7 @@ for test_case in range(1, T + 1):
  
     for i in range(subset_count): # 0~7, 총 8번 순회
         subset = []
-        for j in range(n): # 0~2, 총 3번(부분집합의 원소 수) 순회
+        for j in range(n): # 0~11, 총 12번(부분집합의 원소 수) 순회
             if i & (1 << j):
                 subset.append(A_set_list[j])
         subsets.append(subset)
