@@ -7,7 +7,7 @@ for test_case in range(1,T+1):
     count = 0
     while i+K < N:
         if a == 1:
-        	break
+            break
         for j in range(len(bus_number)-1):
             if i+K == bus_number[j]:
                 i = bus_number[j]

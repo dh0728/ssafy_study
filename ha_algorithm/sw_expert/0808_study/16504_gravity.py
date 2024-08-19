@@ -13,3 +13,5 @@ for i in range(T):
         if answer < new_arr.index(q) - arr.index(q):
             answer = new_arr.index(q) - arr.index(q)
     print(f'#{i+1} {answer}')
+
+    

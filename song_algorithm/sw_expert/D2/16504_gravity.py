@@ -10,4 +10,5 @@ for test_case in range(1, T + 1):
         if count > result:          # 한 줄의 낙차 계산이 끝나면 낙차가 가장 높은 줄과 비교
             result = count
 
-    print(f'#{test_case} {result}')
+    print(f'#{test_case} {result}')  
+    

@@ -9,7 +9,7 @@ for test_case in range(1, T + 1):
     max_A = 0
     for i in range(0, N-1):
         count = 0
-        A = N - 1 -i
+        A = N - 1 -i     
         for j in range(i+1, N):
             if arr[i] <= arr[j]:
                 count += 1
