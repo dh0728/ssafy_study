@@ -18,6 +18,7 @@
 # 일반적으로  사용되는 배열에 값을 저장하고 지정된 인덱스부터 하나씩 더해가는 
 # 방식은 최악의 경우O(n^2)의 시간복잡도를 갖기 때문에 입력의범위가 클 때 사용할 수 없다
 
+# 다시 푼거
 N, K=map(int,input().split()) 
 # N 온도를 측정한 전체 날짜 수, K 합을 구하기 위한 연속적인 날짜 
 
@@ -36,3 +37,15 @@ for i in range(N-K):
         max_sum=sum_n
 
 print(max_sum)
+
+
+# 다른 사람 풀이
+result =[]
+
+N, K = map(int,input().split())
+a = list(map(int, input().split()))
+
+for i in range(N - K + 1):
+    result.append(sum(a[i:i+K]))
+        
+print(max(result))
