@@ -18,8 +18,6 @@ for test_case in range(1, T + 1):
 
     # print(subsets)
 
-
-
 '''
 A 안의 리스트들 중 길이가 N인 부분집합들만 꺼내기
     subsets_A = []

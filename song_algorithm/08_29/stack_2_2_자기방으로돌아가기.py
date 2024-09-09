@@ -7,7 +7,7 @@ def go_room(arr):
         here=(x[1]+1)//2
         for i in range(go, here+1): #이동경로 만큼 +1
             room[i]+=1
- 
+
 T=int(input())
 for tc in range(1,T+1):
     N=int(input())
