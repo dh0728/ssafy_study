@@ -43,10 +43,10 @@ def dfs(n, cnt, s_cnt):
         return
 
     # 2차원 배열을 1차원으로 변환..
-    visited[n//5][n%5] = 1 # 포함하는 경우
+    visited[n//5][n%5] = 1 # 7명 학생에 포함하는 경우
     dfs(n+1, cnt+1, s_cnt+int(arr[n//5][n%5]=='S')) # int 괄호 내 저게 맞으면 +1, 아니면 +0
     visited[n//5][n%5] = 0 # 원상 복구
-    dfs(n+1, cnt, s_cnt)   # 포함하지 않는 경우
+    dfs(n+1, cnt, s_cnt)   # 7명 학생에 포함하지 않는 경우
 
 
 arr = [input() for _ in range(5)]

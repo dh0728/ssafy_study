@@ -2,6 +2,7 @@
 - 1부터 N까지 자연수 중에서 중복 없이 M개를 고른 수열
 - 고른 수열은 오름차순이어야 한다.
 '''
+# 1
 def run(lev, start):
     # M개 골라지면 ans에 있는거 print 찍고 빠져나가기
     if lev == M:
@@ -21,3 +22,22 @@ for i in range(1, N+1):
     num.append(i)
 ans = []
 run(0,0)
+
+# 2
+def dfs():
+    if len(ans) == M:
+        print(*ans)
+        return
+    for i in range(1, N+1):
+        if ans:
+            if i > ans[-1]:
+                ans.append(i)
+                dfs()
+                ans.pop()
+        else:
+            ans.append(i)
+            dfs()
+            ans.pop()
+N, M = map(int, input().split())
+ans = []
+dfs()
