@@ -26,5 +26,4 @@ visited = [False] * (N+1)
 cnt = 0
 # 1번 컴퓨터에서 시작
 dfs(1)
-
 print(cnt)

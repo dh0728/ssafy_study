@@ -22,6 +22,7 @@ def dfs(node):
                 break  # while문 break
     return sort_node
 
+
 def bfs(start):
     sort_node=[]
     v=[0]*(N+1)

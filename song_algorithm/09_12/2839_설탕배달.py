@@ -18,6 +18,7 @@ def dfs(cnt,n):
     for kg in kg_list:
         dfs(cnt+1,n-kg)
     return
+
 kg_list=[5,3]
 result=-1 # 처음엔 만들수 없는 경우인 -1로 초기화
 dfs(0,N)
