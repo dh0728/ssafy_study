@@ -42,12 +42,12 @@ else:
         word = input().strip()
         word = word[4:-4] # 앞뒤 필요 없는 알파벳 빼주기
         words.append(word)
-
+    # 아스키코드
     # a ~ z = 97 ~ 122
     max_cnt=0
     alpha = [0] * 26
     # 단어 앞뒤 항상 anti, tica이므로 a,n,t,i,c 최소 5글자는 필수로 알고 있어야 함
-    for a in 'antic':
+    for a in 'antic':       
         alpha[ord(a)-97]=1
 
     dfs(0,0) # start, depth
