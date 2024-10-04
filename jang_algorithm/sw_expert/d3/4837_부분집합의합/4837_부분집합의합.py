@@ -26,6 +26,7 @@ A 안의 리스트들 중 길이가 N인 부분집합들만 꺼내기
     for a in range(A):
         if len(a) == N:
             subset_A.append(a)
+            
 subset_A 순회하면서 요소 더했을 때 K인 리스트들 개수 출력  
     sums = []
     for b in range(subset_A):
