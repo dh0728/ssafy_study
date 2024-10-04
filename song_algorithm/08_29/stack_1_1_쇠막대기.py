@@ -17,10 +17,9 @@ def check_stack(case):
         elif c == ')':  #파이프 끝이므로 현재 파이프에서 제외
             s.pop()
     return cnt +cnt_pi  #총 잘린 파이프수는 레이저를 만나 잘린 횟수 + 사용된 파이프수 
- 
+
 T=int(input())
 for tc in range(1,T+1):
     case=list(input())
- 
     result=check_stack(case)
     print(f'#{tc} {result}')

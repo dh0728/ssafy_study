@@ -30,6 +30,7 @@ for i in range(N-1):
     else: # 같은 경우
         cnt+=1  # 길이 +1
         sm +=1  # 중복 횟수 +1
+        
 if max_cnt < cnt:   # 수열순회 끝난후 cnt 와 길이 비교
     max_cnt=cnt
     

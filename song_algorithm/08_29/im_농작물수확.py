@@ -18,7 +18,7 @@ def income(N,arr):
         lower_i-=1  #중심 row 아래칸으로 이동
         count_j-=2  #수확하는 칸수 두칸 감소
     return count
- 
+
 T=int(input())
 for tc in range(1, T+1):
     N=int(input())
