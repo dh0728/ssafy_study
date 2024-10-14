@@ -2,7 +2,7 @@ import sys
 # input=sys.stdin.readline
 sys.stdin=open('input.txt')
 
-def comb(idx,sum_ki,men_list,cnt):
+def comb(idx ,sum_ki,men_list,cnt):
     global seven_short
 
     if sum_ki>100: #키의 합이 100을 넘어가면 중지
