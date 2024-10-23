@@ -1,5 +1,6 @@
 '''
 출력 -> 총 단지의 수, 각 단지에 속하는 집의 수 오름차순 출력
+단순 bfs ㄱ
 '''
 from collections import deque
 
