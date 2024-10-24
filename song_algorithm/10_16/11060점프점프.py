@@ -31,3 +31,24 @@ if N==1:
 else:
     result=bfs()
     print(result)
+
+
+
+#  다이나믹프로그래밍으로 풀기
+
+N= int(input())
+arr=list(map(int,input().split()))
+
+dp = [N]*N
+dp[0]=0
+
+for i in range(N):
+    for j in range(arr[i]+1): # j = 점프로 갈 수 있는 칸 수
+        if i+j < N: # 마지막 칸 안넘어가면 
+            dp[i+j]=min(dp[i+j],dp[i]+1) # 최소 점프횟수 넣기
+
+print(dp)
+if dp[N-1] < N:
+    print(dp[N-1])
+else:
+    print(-1)
