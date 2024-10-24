@@ -17,7 +17,7 @@ def bfs():
 
     # [2] q에 초기데이터(들) 삽입, 안익은 토마토 카운트
     cnt = 0
-    for h in range(H):              # 전체순회하며 처리
+    for h in range(H):           # 전체순회하며 처리
         for i in range(N):
             for j in range(M):
                 if arr[h][i][j]==1: # 익은토마토

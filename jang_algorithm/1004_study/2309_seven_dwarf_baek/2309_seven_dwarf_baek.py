@@ -8,6 +8,7 @@ tall_lst.sort()
 sum_t = sum(tall_lst)
 print(tall_lst)
 
+
 # asdf
 # for i in range(len(tall_lst)):
 #     for j in range():
